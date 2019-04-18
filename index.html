@@ -1,47 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="Web Starter Kit">
-  <link rel="icon" sizes="192x192" href="images/icons/icon-192x192.png">
-  <meta name="theme-color" content="#2F3BA2">
-  <!-- Add to homescreen for Safari on iOS -->
+  <link rel="stylesheet" href="/css/style.css">
+<!-- Add to homescreen for Safari on iOS -->
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-title" content="Web Starter Kit">
-  <link rel="apple-touch-icon" href="images/icons/icon-512x512.png">
+  <link rel="apple-touch-icon" href="images/icons/icon-180x180.png">
   <meta name="apple-mobile-web-app-status-bar-style" content="translucent">
+<!-- Add to homescreen for modern mobile browsers -->
   <link rel="manifest" href="app.webmanifest">
-  <link rel="stylesheet" href="/css/style.css">
-    <script>
-      /*     var swreg={onupdatefound:e=>{console.log(e)}};
-        if ('serviceWorker' in navigator) {
-          navigator.serviceWorker.register('js/sw.js')
-          .then(o=>{swreg = Object.assign(swreg,o)})
-        }
-        */
-       if ('serviceWorker' in navigator) {
-          window.addEventListener('load', function () {
-            var swPromice = navigator.serviceWorker.register('/sw.js', {scope: '/'})
-            swPromice.then(function (regObj) {
-              console.log('ServiceWorker registration successful with scope: ', regObj.scope);
-              window.sw = regObj;
-            }, function (err) {
-              console.log('blip blop failure: ', err);
-            });
-          });
-        }
+  <script>
+    /************************************************************
+        This is where we import and register the service worker file.
+        This line only runs if it's the first time, 
+        or if the service worker has changed.
+        ("serviceWorker" in navigator) is a
+        way to see if the browser has
+        support for serviceworker
+    ******************************/
+    if ("serviceWorker" in navigator) {
+      navigator.serviceWorker.register('/sw.js')
+    }
 
-    </script>
-  <title>Home page</title>
+  </script>
+  <title>PWA Boilerplate</title>
 </head>
+
 <body>
-  <h1>PWA page</h1>
-  <p><a href="images.html">logo</a></p>
-  <pre>[|||]</pre>
+  <h1>PWA Boilerplate</h1>
+  <p>Put this code in your start page (index.html):</p>
+  <pre>
+    if ("serviceWorker" in navigator) { 
+      navigator.serviceWorker.register('sw.js') 
+    }
+  </pre>
+  <p><a href="images.html">Page 2</a></p>
   <script src="js/app.js"></script>
 </body>
+
 </html>

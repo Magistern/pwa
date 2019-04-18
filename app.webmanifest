@@ -2,7 +2,7 @@
   "name": "Progressive Web application",
   "short_name": "PWA",
   "description": "my first PWA",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "lang": "en-us",
   "display": "standalone",
   "orientation": "portrait",
