@@ -9,7 +9,7 @@ var filesToCache=[
   "/pwa/",
   "/pwa/index.html",
   "/pwa/css/style.css",
-  "/pwa/js/app.js",
+  "/pwa/app.js",
   "/pwa/app.webmanifest",
   "/pwa/images/icons/icon-128x128.png",
   "/pwa/images/icons/icon-144x144.png",
@@ -25,7 +25,7 @@ var filesToCache=[
     The Caches object can consist of multiple named caches. 
     During install, we create a new named cache. 
 ******************************/
-latestCacheName = 'App-Shell-v2';
+latestCacheName = 'App-Shell-v3';
 
 /** ** ** ** ** ** ** ** ** ** ** **
  * This will only run once, during install. 
