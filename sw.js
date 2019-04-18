@@ -6,26 +6,26 @@
     network access while using the app.
 ******************************/
 var filesToCache=[
-  "/",
-  "/index.html",
-  "/css/style.css",
-  "/js/app.js",
-  "/app.webmanifest",
-  "/images/icons/icon-128x128.png",
-  "/images/icons/icon-144x144.png",
-  "/images/icons/icon-152x152.png",
-  "/images/icons/icon-192x192.png",
-  "/images/icons/icon-384x384.png",
-  "/images/icons/icon-512x512.png",
-  "/images/icons/icon-72x72.png",
-  "/images/icons/icon-96x96.png"
+  "/pwa/",
+  "/pwa/index.html",
+  "/pwa/css/style.css",
+  "/pwa/js/app.js",
+  "/pwa/app.webmanifest",
+  "/pwa/images/icons/icon-128x128.png",
+  "/pwa/images/icons/icon-144x144.png",
+  "/pwa/images/icons/icon-152x152.png",
+  "/pwa/images/icons/icon-192x192.png",
+  "/pwa/images/icons/icon-384x384.png",
+  "/pwa/images/icons/icon-512x512.png",
+  "/pwa/images/icons/icon-72x72.png",
+  "/pwa/images/icons/icon-96x96.png"
 ];
 
 /************************************************************
     The Caches object can consist of multiple named caches. 
     During install, we create a new named cache. 
 ******************************/
-latestCacheName = 'App-Shell-v1';
+latestCacheName = 'App-Shell-v2';
 
 /** ** ** ** ** ** ** ** ** ** ** **
  * This will only run once, during install. 
