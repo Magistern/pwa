@@ -25,7 +25,7 @@ var filesToCache=[
     The Caches object can consist of multiple named caches. 
     During install, we create a new named cache. 
 ******************************/
-latestCacheName = 'App-Shell-v3';
+latestCacheName = 'App-Shell-v1';
 
 /** ** ** ** ** ** ** ** ** ** ** **
  * This will only run once, during install. 
